@@ -4,7 +4,7 @@
   "description": "Blank Typescript Project with Jest for testing",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./lib/index.ts",
+    "dev": "ts-node ./src/index.ts",
     "prod": "node dist/index.js",
     "build": "npm run clean && tsc",
     "clean": "rm -rf dist",
