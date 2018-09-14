@@ -1,7 +1,7 @@
 # ts-starter
 Blank Typescript Project with Jest for testing
 
-Creating Library
+Clone & Build Project
 ----
 
 1. Clone this repository by running following command. Here we are target folder as **project-name**. You can change the name as per your wish.
