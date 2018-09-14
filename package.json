@@ -1,0 +1,45 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "Blank Typescript Project with Jest for testing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./lib/index.ts",
+    "prod": "node dist/index.js",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "test": "jest  --detectOpenHandles --forceExit",
+    "cover": "jest --coverage",
+    "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "git add -A",
+    "postversion": "git push origin master && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSnooker/ts-starter.git"
+  },
+  "keywords": [
+    "typescript",
+    "starter project"
+  ],
+  "author": "Paras Mendiratta <code.snooker@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeSnooker/ts-starter/issues"
+  },
+  "homepage": "https://github.com/CodeSnooker/ts-starter#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.9.4",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.2",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.3"
+  }
+}
